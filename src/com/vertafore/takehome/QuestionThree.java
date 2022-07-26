@@ -34,7 +34,7 @@ public class QuestionThree {
 
         //loop through the list using two pointers to get indexes of the duplicate abbreviations
         //runtime is severe, could be improved
-        //saves indexes of any duplicates in a seperate list.
+        //saves indexes of any duplicates in a sep. list.
         for(int i = 0; i < abbrevList.size(); i++){
             for(int j = 1; j < abbrevList.size(); j++){
                 if(abbrevList.get(i).equals(abbrevList.get(j)) && i != j){
