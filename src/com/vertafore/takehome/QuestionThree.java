@@ -31,7 +31,7 @@ public class QuestionThree {
             String abbrev = QuestionTwo.abbreviate(word);
             abbrevList.add(abbrev);
         }
-        
+
         //loop through the list using two pointers to get indexes of the duplicate abbreviations
         //runtime is severe, could be improved
         //saves indexes of any duplicates in a seperate list.
