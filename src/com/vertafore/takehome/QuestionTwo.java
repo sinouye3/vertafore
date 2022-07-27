@@ -39,7 +39,7 @@ public class QuestionTwo {
     public static void main(String[] args){
 
 
-        String internationalization = "h9llo";
+        String internationalization = "hello";
         String localization = "localization";
         String nullTest = null;
 
