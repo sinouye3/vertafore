@@ -9,6 +9,7 @@ public class QuestionTwo {
         it then returns the abbreviated string
 
         If string length < 2, an IllegalArgumentException will be raised
+        If string contains numbers an IllegalArgumentException will also be raised
 
         Params: String (len > 2)
         output: String
@@ -19,9 +20,13 @@ public class QuestionTwo {
         if(inp == null){
             throw new IllegalArgumentException("string cannot be null");
         }
+        if(!inp.chars().allMatch(Character::isLetter)){
+            throw new IllegalArgumentException("String can only contain letters");
+        }
         if(inp.length() < 2){
             throw new IllegalArgumentException("string must be at least 2 characters in length");
         }
+
         else if(inp.length() == 2){
             output.append(inp.charAt(0)).append(0).append(inp.charAt(1));
         }else{
@@ -34,7 +39,7 @@ public class QuestionTwo {
     public static void main(String[] args){
 
 
-        String internationalization = "internationalization";
+        String internationalization = "h9llo";
         String localization = "localization";
         String nullTest = null;
 
